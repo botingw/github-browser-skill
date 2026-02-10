@@ -1,0 +1,173 @@
+
+ ▐▛███▜▌   Claude Code v2.1.32
+▝▜█████▛▘  Opus 4.6 · Claude Pro
+  ▘▘ ▝▝    ~/code_non_git/test_web_create
+
+❯ 我想在github搜尋pydantic的ai agents，pydantic (or pydantic                
+  ai)是一個用來開發ai agent 的                                              
+  framework我想知道目前有哪些非常受關注的相關ai                             
+  agents，因為我想學習這個framework。                                       
+
+⏺ Web Search("GitHub pydantic AI agents framework popular repositories 2026")
+  ⎿  Did 1 search in 7s
+
+⏺ Web Search("pydantic-ai framework GitHub stars popular projects 2026")
+  ⎿  Did 1 search in 7s
+
+⏺ Fetch(https://github.com/topics/pydantic-ai)
+  ⎿  Interrupted · What should Claude do instead?
+
+⏺ Fetch(https://github.com/topics/pydanticai)
+  ⎿  Interrupted · What should Claude do instead?
+
+❯ /skills 
+  ⎿  Skills dialog dismissed
+
+❯ 請使用github-browser skill，這個skill更擅長我說的這個任務 
+
+⏺ Skill(github-browser)
+  ⎿  Successfully loaded skill
+
+⏺ 好，讓我用多個搜尋管道來找出最受歡迎的 pydantic-ai 相關專案。
+
+⏺ Bash(gh auth status 2>&1)
+  ⎿  github.com
+       ✓ Logged in to github.com account botingw (keyring)
+       - Active account: true
+     … +3 lines (ctrl+o to expand)
+
+⏺ Bash(gh search repos "pydantic-ai" --sort stars --limit 20 --json
+      fullName,description,stargazersCount,updatedAt 2>&1)
+  ⎿  [
+       {
+         "description": "GenAI Agent Framework, the Pydantic way",
+     … +149 lines (ctrl+o to expand)
+
+⏺ Bash(gh search repos --topic pydantic-ai --sort stars --limit 20 --json
+      fullName,description,stargazersCount,updatedAt 2>&1)
+  ⎿ [
+      {
+        "description": "AI observability platform for production LLM and ag
+    … +153 lines (ctrl+o to expand)
+
+
+⏺ Bash(gh search repos --topic pydanticai --sort stars --limit 20 --json
+      fullName,description,stargazersCount,updatedAt 2>&1)
+  ⎿ [
+      {
+        "description": "PydanticAI Agent for chemistry related tasks includ
+    … +132 lines (ctrl+o to expand)
+
+
+⏺ Bash(gh search repos "pydantic ai agent" --sort stars --limit 20 --json
+      fullName,description,stargazersCount,updatedAt 2>&1)
+  ⎿ [
+      {
+        "description": "Learn Pydantic AI agents, step by step, using local
+    … +149 lines (ctrl+o to expand)
+
+
+⏺ 搜尋結果非常豐富。以下是目前 GitHub 上與 Pydantic AI
+  相關、最受關注的專案整理：
+
+  ---
+  核心框架
+  Repo: https://github.com/pydantic/pydantic-ai
+  Stars: 14,795
+  說明: 官方框架本身，GenAI Agent Framework
+  ────────────────────────────────────────
+  Repo: https://github.com/pydantic/logfire
+  Stars: 4,009
+  說明: Pydantic 官方的 AI observability 平台，用於監控 LLM/agent 系統
+  ────────────────────────────────────────
+  Repo: https://github.com/pydantic/ai-chat-ui
+  Stars: 36
+  說明: 官方 Web UI，基於 Vercel AI protocol
+  ────────────────────────────────────────
+  Repo: https://github.com/pydantic/pydantic-ai-gateway
+  Stars: 171
+  說明: 官方 AI gateway
+  高星專案（應用 & 擴展）
+  Repo: https://github.com/Arize-ai/openinference
+  Stars: 849
+  說明: OpenTelemetry AI Observability，支援 Pydantic AI
+  ────────────────────────────────────────
+  Repo: https://github.com/divar-ir/ai-doc-gen
+  Stars: 694
+  說明: AI 驅動的多 agent 系統，自動分析 codebase 生成文檔
+  ────────────────────────────────────────
+  Repo: https://github.com/vstorm-co/full-stack-fastapi-nextjs-llm-template
+  Stars: 564
+  說明: 全棧 AI 應用模板（FastAPI + Next.js），針對 PydanticAI 優化
+  ────────────────────────────────────────
+  Repo: https://github.com/astronomer/airflow-ai-sdk
+  Stars: 522
+  說明: 基於 Pydantic AI 的 Apache Airflow AI SDK
+  ────────────────────────────────────────
+  Repo: https://github.com/ggozad/haiku.rag
+  Stars: 482
+  說明: Agentic RAG，用 LanceDB + Pydantic AI + Docling
+  ────────────────────────────────────────
+  Repo: https://github.com/grll/mcpadapt
+  Stars: 416
+  說明: 在 Pydantic AI 等框架中解鎖 650+ MCP server tools
+  ────────────────────────────────────────
+  Repo: https://github.com/vstorm-co/pydantic-deepagents
+  Stars: 282
+  說明: 基於 Pydantic-AI 的 Deep Agent 框架，支援 planning、subagent delegation
+  學習資源 & 教學
+  Repo: https://github.com/abdallah-ali-abdallah/pydantic-ai-agents-tutorial
+  Stars: 144
+  說明: 用 Ollama 本地模型，一步步學 Pydantic AI agents
+  ────────────────────────────────────────
+  Repo: https://github.com/coleam00/PydanticAI-Research-Agent
+  Stars: 128
+  說明: Research Agent，結合 web 研究 + Gmail，有 streaming CLI
+  ────────────────────────────────────────
+  Repo: https://github.com/daveebbelaar/pydantic-ai-tutorial
+  Stars: 128
+  說明: 教你如何用 PydanticAI 建構 AI agents
+  ────────────────────────────────────────
+  Repo:
+  https://github.com/intellectronica/building-effective-agents-with-pydantic-ai
+  Stars: 97
+  說明: 將 Anthropic「Building Effective Agents」移植到 Pydantic AI
+  實戰應用案例
+  Repo: https://github.com/coleam00/MongoDB-RAG-Agent
+  Stars: 93
+  說明: Hybrid RAG Agent（MongoDB + Pydantic AI + Docling）
+  ────────────────────────────────────────
+  Repo: https://github.com/DougTrajano/pydantic-ai-skills
+  Stars: 83
+  說明: Agent Skills 系統，支援 progressive disclosure
+  ────────────────────────────────────────
+  Repo: https://github.com/phil65/agentpool
+  Stars: 79
+  說明: 統一 agent 編排中心，透過 YAML 管理多個 AI agents
+  ────────────────────────────────────────
+  Repo: https://github.com/timescale/tiger-agents-for-work
+  Stars: 67
+  說明: Agentic Slack bots，支援 durable execution
+  ────────────────────────────────────────
+  Repo: https://github.com/coleam00/custom-agent-with-skills
+  Stars: 61
+  說明: 實現 Claude Skills 概念的 Pydantic AI agent
+  ---
+  學習建議
+
+  如果你想學這個框架，我建議的路徑：
+
+  1. 先看官方 → https://github.com/pydantic/pydantic-ai 的文檔和 examples
+  2. 跟教學走 → pydantic-ai-agents-tutorial (144 stars) 用本地 Ollama
+  模型，零成本入門
+  3. 看最佳實踐 → building-effective-agents-with-pydantic-ai 是 Anthropic 官方
+  agent 設計模式的 Pydantic AI 版
+  4. 實戰參考 → pydantic-deepagents 和 PydanticAI-Research-Agent 展示了
+  production-grade 的寫法
+  5. 全棧範例 → full-stack-fastapi-nextjs-llm-template
+  如果你需要完整的前後端架構
+
+  整個生態目前非常活躍，官方框架本身 14.8k stars 且持續更新（最新版 2026/2/5
+  發布），社群專案也在快速增長。
+
+✻ Brewed for 1m 5s

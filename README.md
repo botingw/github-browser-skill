@@ -121,6 +121,31 @@ User: "Find popular TypeScript testing libraries"
   - gh search repos --topic testing --topic typescript --sort stars
 ```
 
+## Real-World Use Case
+
+See [example-ecosystem-research.txt](example-ecosystem-research.txt) for a complete conversation transcript showing the skill in action.
+
+**Scenario:** User wanted to find popular GitHub repositories related to the Pydantic AI framework to learn from the community.
+
+**What happened:**
+1. Initially, Claude Code tried using web search (less optimal for this task)
+2. User explicitly invoked the `github-browser` skill
+3. The skill applied its **multi-channel search strategy**:
+   - Repository name/description search: `gh search repos "pydantic-ai"`
+   - Topic-based search: `gh search repos --topic pydantic-ai`
+   - Variant topic search: `gh search repos --topic pydanticai`
+   - Natural language search: `gh search repos "pydantic ai agent"`
+4. Cross-referenced results from all channels to find the most relevant projects
+
+**Results:** Discovered 20+ high-quality repositories including:
+- Official framework (14,795 stars)
+- Observability platform (4,009 stars)
+- Production application templates (560+ stars)
+- Learning tutorials and documentation
+- Real-world implementation examples
+
+This example demonstrates how the skill's systematic approach outperforms simple keyword searches by using multiple discovery channels and cross-referencing results.
+
 ## Design Principles
 
 1. **No custom scripts** — Teach command patterns using native `gh` CLI + `jq`, not bash scripts
